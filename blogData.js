@@ -31,7 +31,7 @@
          blogDate:"JUNE 18, 2026",
         blogContent:`I'm excited to start a new learning journey as a Scrimba Bootcamp student!
                      After several months of learning in the Frontend Developer Career Path.`,
-        blogSrc:'./images/blog-4.png',
+        blogSrc:'/images/blog-4.png',
         alt:"A laptop with a text on its screen saying 'A desing and develop experience that make people's lives simpler",
         id : 4
         
