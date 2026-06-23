@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  "Source Sans 3", sans-serif;
+    font-size: 1rem;
+    background-color: #FAFAFA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    flex: 1;
+}
+
+main img{
+    width: 100%;
+}
+/*========typography========*/
+h1,
+h2,
+h3,
+.view-more-link{
+    font-weight: 700;
+}
+p{
+    line-height: 1.3;
+}
+
+h1{
+  font-size:2rem;
+  line-height: 1;
+  margin-top: 0.25em;
+}
+h1 ,
+ .hero-content,
+ h2,
+ h3,
+ p{
+ margin-bottom: 0 ;
+}
+h2{
+  font-size: 0.75rem ;
+}
+h3{
+    font-size: 1.5rem;
+}
+.nav-item a {
+     text-decoration: none;
+    font-weight: 600;
+    color: #303030;
+}
+.logo-paragraph{
+    font-size: 0.95rem  ;
+    font-weight: 700;
+    margin-top: 0;
+    margin-left: 0.25em;
+}
+.copyright{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.logo-ct  p {
+    font-weight: 700;
+}
+
+/*======layout=======*/
+
+.text-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+
+}
+.card-img,
+.blog-img img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+header{
+     background-color: #fff;
+}
+.header-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    white-space: nowrap;
+    
+}
+
+.logo-img{
+    height: 1.5em;
+    width: 1.5em;
+
+}
+.nav{
+    width: 50%;
+    margin-left: auto;
+   
+}
+.nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+.nav-item{
+    margin-left: 1em;
+}
+
+.hero-section{
+    background-image: url(../images/hero-img.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode:multiply;
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 0 1px 3px  rgba(0, 0, 0, 0.9);
+    min-height: 40vh;
+    
+   
+    
+}
+.hero-body{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: end  ;
+    margin-top: auto;
+    backdrop-filter: blur(5px);
+    
+}
+
+.hero-section  .hero-body-info{
+    order: -1;
+    letter-spacing: 5px;
+    text-shadow: 0  1px 5px rgba(0, 0, 0, 0.7) ;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    gap: 1.5em;
+}
+.blog-card{
+    position: relative;
+    background: rgba(255, 255, 255, 0.12) ;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.33);;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    padding: 1em;
+    outline-offset: 2px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    
+}
+.card-img {
+    
+    margin-bottom: 1em;
+    object-fit: cover;
+    
+    
+}
+.card-link{
+    position: absolute;
+    inset: 0;
+  
+    
+}
+.blog-card:hover,
+.blog-card:active{
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+               rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgb(215, 215, 215) 0px -3px 0px inset;
+
+}
+
+.view-more-link{
+    display: block;
+     margin: 1.5em auto;
+     width: max-content;
+    color: #303030;
+}
+.footer{
+    background-color: #202020;
+    text-align: center;
+    color: #D7D7D7;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-hero-section{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+.about-me-avatar{
+    display: block;
+    width:182px ;
+    aspect-ratio: 1/1;
+    object-fit:contain;
+
+}
+@media (max-width:768px){
+    .about-me-hero-section{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px){
+    body{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-section{
+        background-size: cover;
+        background-position: top;
+        height: 40vh;
+    }
+   .hero-content{
+      max-width: 600px;
+   }
+}
