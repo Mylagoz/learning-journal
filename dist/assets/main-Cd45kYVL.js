@@ -1,0 +1,1 @@
+import{n as e,t}from"./blogsCards-i25BFudZ.js";/* empty css              */var n=document.querySelector(`.main-content`);document.body.addEventListener(`click`,function(e){e.target.dataset.uuid&&localStorage.setItem(`renderId`,JSON.stringify(e.target.dataset.uuid))});function r(){n.innerHTML=t(e)}r();
