@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import { cpSync } from 'fs'
+
+function copyStaticAssets() {
+  return {
+    name: 'copy-static-assets',
+    writeBundle() {
+      cpSync(resolve(__dirname, 'images'), resolve(__dirname, 'dist/images'), { recursive: true })
+    }
+  }
+}
 
 export default defineConfig({
+  plugins: [copyStaticAssets()],
   root: resolve(__dirname),
   base: './',
   server: {
