@@ -1,3 +1,4 @@
+Netlify link: https://mylagozlearning.netlify.app/
 # Getting Started
 Install the dependencies and run the project
 ```
