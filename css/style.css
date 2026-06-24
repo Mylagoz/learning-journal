@@ -188,6 +188,9 @@ header{
                 rgb(215, 215, 215) 0px -3px 0px inset;
 
 }
+.blog-main-content p:last-of-type{
+    margin-bottom: 1em;
+}
 
 .view-more-link{
     display: block;
