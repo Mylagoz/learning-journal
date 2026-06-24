@@ -35,7 +35,7 @@ function contentRender(blog){
       I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
   </section>
   <section class="blog-img">
-    <img src="/public/images/${mainHtml.blogSrc}" alt="${mainHtml.alt}" />
+    <img src="/images/${mainHtml.blogSrc}" alt="${mainHtml.alt}" />
   </section>
   <section class=blog-main-content text-container>
    <article>
